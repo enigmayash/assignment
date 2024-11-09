@@ -20,7 +20,7 @@ class RepositoryDetailScreen extends ConsumerWidget {
               return Container(
                 child: Column(
                   children: [
-                    Text('description' + repositoryDetail.description),
+                    Text('description' + (repositoryDetail.description ?? 'No description available')),
                     Text('created' + repositoryDetail.createdAt.toString()),
                   ],
                 ),
